@@ -5,10 +5,9 @@ import BlocoB from "@/components/BlocoB.vue";
 import BlocoC from "@/components/BlocoC.vue";
 import BlocoD from "@/components/BlocoD.vue";
 import BlocoE from "@/components/BlocoE.vue";
-import BlocoEncubatório from "@/components/BlocoEncubatório.vue";
+import BlocoEncubatorio from "@/components/BlocoEncubatorio.vue";
 import BlocoGinasio from "@/components/BlocoGinasio.vue";
 import BlocoFazenda from "@/components/BlocoFazenda.vue";
-
 
 export default {
   components: {
@@ -18,13 +17,13 @@ export default {
     BlocoC,
     BlocoD,
     BlocoE,
-    BlocoEncubatório,
+    BlocoEncubatorio,
     BlocoGinasio,
-    BlocoFazenda
+    BlocoFazenda,
   },
   data() {
     return {
-      atual: "campus",
+      atual: "BlocoA",
     };
   },
   methods: {
@@ -36,9 +35,8 @@ export default {
 </script>
 
 <template>
-  {{ atual }}
   <BlocoCampus
-    v-if="atual === 'BlocoCampus'"
+    v-if="atual === 'campus'"
     @altera-atual="alteraAtual"
   ></BlocoCampus>
   <BlocoA v-if="atual === 'BlocoA'" @altera-atual="alteraAtual"></BlocoA>
@@ -46,15 +44,18 @@ export default {
   <BlocoC v-if="atual === 'BlocoC'" @altera-atual="alteraAtual"></BlocoC>
   <BlocoD v-if="atual === 'BlocoD'" @altera-atual="alteraAtual"></BlocoD>
   <BlocoE v-if="atual === 'BlocoE'" @altera-atual="alteraAtual"></BlocoE>
-  <BlocoEncubatório
-    v-if="atual === 'BlocoEncubatório'"
+  <BlocoEncubatorio
+    v-if="atual === 'BlocoEncubatorio'"
     @altera-atual="alteraAtual"
-  ></BlocoEncubatório>
+  ></BlocoEncubatorio>
   <BlocoGinasio
     v-if="atual === 'BlocoGinasio'"
     @altera-atual="alteraAtual"
   ></BlocoGinasio>
-  <BlocoFazenda v-if="atual === 'BlocoFazenda'" @altera-atual="alteraAtual"><BlocoFazenda>
+  <BlocoFazenda
+    v-if="atual === 'BlocoFazenda'"
+    @altera-atual="alteraAtual"
+  ></BlocoFazenda>
 </template>
 
 <style></style>

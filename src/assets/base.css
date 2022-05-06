@@ -106,3 +106,12 @@ input:checked ~ label .projeto:after {
     margin-bottom: 1em;
     text-decoration: none;
   }
+
+  header{
+    margin-top: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(235, 240, 230, 0.973);
+    font-family:Josefin Sans; 
+
+  }
