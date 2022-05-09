@@ -1,5 +1,21 @@
+<script>
+export default {
+  data() {
+    return {
+      nome: "Bloco AAAAAA",
+      imagem: new URL("./imgs/BlocoA.jpeg", import.meta.url).href,
+    };
+  },
+};
+</script>
+
 <template>
-  <header><h1>Bloco A</h1></header>
+  <header>
+    <h1>{{ nome }}</h1>
+  </header>
+  <main>
+    <img :src="imagem" alt="" />
+  </main>
   <input id="menu-projeto" type="checkbox" />
   <label for="menu-projeto">
     <div class="menu">
