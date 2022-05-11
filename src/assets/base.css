@@ -115,3 +115,26 @@ input:checked ~ label .projeto:after {
     font-family:Josefin Sans; 
 
   }
+
+  main{
+    margin-top: 7%;
+  }
+
+  #content {
+    grid-area: content;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  break{
+    flex-basis: 100%;
+    height: 0;
+  }
+  .lacunas {
+    width: 33%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 17px;
+  }
